@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <title>Termos e Condições</title>
+    <style>
+        body {
+            background-image: url(img/backgroud.jpg);
+            background-color: rgb(238, 0, 255);
+            background-size: cover;
+            background-position: center;
+            color: black;
+            font-family: Arial, sans-serif;
+            font-size: 13px;
+            margin: 0 auto;
+            padding: 20px;
+            max-width: 600px;
+            text-align: justify;
+            border: 4px solid #4f008034;
+            border-radius: 20px;
+            box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.2);
+        }
+
+        h1, h3 {
+            text-align: center;
+            color: #4f0080db;
+            margin: 10px 0;
+        }
+        
+        h1 {
+            font-size: 25px;
+            text-decoration: underline;
+        }
+
+        p {
+            color: #4f0080db;
+            font-size: 15px;
+            margin: 10px 0;
+            padding-left: 20px;
+        }
+
+        h3 {
+            font-size: 18px;
+            text-decoration: underline;
+            text-transform: uppercase;
+            padding: 5px;
+        }
+
+        ul {
+            list-style-type: square;
+            color: #4f0080db;
+            font-size: 15px;
+            margin: 10px 0;
+            padding-left: 20px;
+        }
+
+        .confirmar {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .confirmar button {
+            padding: 10px 20px;
+            margin: 5px;
+            background-color: #6d00b1;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-weight: bold;
+            border-radius: 20px;
+            width: 45%;
+            text-transform: uppercase;
+            transition: background-color 0.3s;
+        }
+
+        .confirmar button:hover {
+            background-color: #5c00a1;
+        }
+
+        .texto {
+            font-size: 15px;
+            color: #4f0080db;
+            text-transform: uppercase;
+            margin: 10px 0;
+        }
+
+        @media (max-width: 600px) {
+            body {
+                max-width: 100%;
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>TERMOS E CONDIÇÕES</h1>
+<p>Ao utilizar nossos serviços e completar o cadastro, você concorda com os seguintes Termos e Condições. Leia atentamente:</p>
+
+<h3>1. Aceitação dos Termos</h3>
+<ul>
+    <li>1.1 Ao marcar a caixa de seleção <strong>"Li e aceito os Termos e Condições de Uso"</strong> e enviar o formulário, você concorda em estar legalmente vinculado aos nossos Termos e Condições.</li> 
+    <li>1.2 Estes Termos aplicam-se a todos os usuários que acessarem e utilizarem nosso site ou plataforma.</li>
+</ul>
+
+<h3>2. Informações Cadastrais</h3>
+<ul>
+    <li>2.1 Você concorda em fornecer informações precisas e verdadeiras ao completar o cadastro.</li> 
+    <li>2.2 Todas as informações fornecidas serão tratadas de acordo com nossa Política de Privacidade, que está em conformidade com a legislação vigente.</li>
+</ul>
+
+<h3>3. Uso da Plataforma</h3>
+<ul>
+    <li>3.1 A plataforma é um espaço de comunicação e divulgação de conteúdo.</li>
+    <li>3.2 O conteúdo disponibilizado na plataforma é de responsabilidade do usuário. A plataforma não é responsável por qualquer dano direto, indireto, incidental, consequencial ou punitivo que possa resultar do uso ou incapacidade de uso do conteúdo.</li>
+</ul>
+
+<h3>4. Política de Privacidade</h3>
+<ul>
+    <li>4.1 Comprometemo-nos a manter a privacidade e segurança dos dados pessoais dos usuários, conforme descrito em nossa Política de Privacidade.</li> 
+    <li>4.2 As informações fornecidas serão utilizadas apenas para os fins descritos na plataforma e para a melhoria de nossos serviços.</li>
+</ul>
+
+<h3>5. Modificações nos Termos</h3>
+<ul>
+    <li>5.1 Reservamo-nos o direito de modificar ou substituir estes Termos a qualquer momento. Quaisquer alterações serão notificadas aos usuários, e o uso continuado da plataforma após tais alterações constituirá aceitação dos novos Termos.</li>
+</ul>
+
+<h3>6. Limitação de Responsabilidade</h3>
+<ul>
+    <li>6.1 A plataforma e seus administradores não são responsáveis por qualquer dano direto, indireto, incidental, consequencial ou punitivo que possa resultar do uso ou incapacidade de uso da plataforma.</li>
+    <li>6.2 Não nos responsabilizamos pela precisão, integridade ou pontualidade das informações contidas na plataforma.</li>
+</ul>
+
+<h3>7. Cancelamento de Cadastro</h3>
+<ul>
+    <li>7.1 O usuário pode solicitar o cancelamento de seu cadastro a qualquer momento entrando em contato com o suporte. Todos os dados pessoais serão excluídos em conformidade com a legislação aplicável.</li> 
+    <li>7.2 Reservamo-nos o direito de encerrar ou suspender o acesso do usuário em caso de violação dos Termos.</li>
+</ul>
+
+<h3>8. Contato</h3>
+<ul>
+    <li>Caso tenha dúvidas sobre estes Termos e Condições, entre em contato conosco por meio de nossos canais de atendimento disponíveis na plataforma.</li>
+</ul>
+
+
+    <div class="confirmar">
+        <p class="texto">Você concorda com estes termos e condições?</p>
+        <button onclick="confirmTerms()">Confirmar</button>
+        <button onclick="declineTerms()">Não Confirmar</button>
+    </div>
+
+    <script>
+        function confirmTerms() {
+            if (window.confirm("Você concorda com os termos e condições?")) {
+                alert("Obrigado e sucesso!");
+                window.location.href = "dir/aceite.pdf"; // Substitua pela URL correta
+            } else {
+                alert("Você não concordou com os termos e condições.");
+            }
+        }
+
+        function declineTerms() {
+            alert("Você optou por não concordar com os termos e condições.");
+        }
+    </script>
+</body>
+</html>

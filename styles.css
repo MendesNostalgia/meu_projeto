@@ -1,12 +1,11 @@
 body {
-    background: rgba(74, 0, 123, 0.665);
-    
+    background: rgba(74, 0, 123, 0.665);    
 }
 
-.login {
+.box {
     border: 1px solid black;
-    width: 500px;
-    height: 800px;
+    width: 450px;
+    height: 700px;
     background: url('img/lilas.jpg');
     color: white;
     border-radius: 20px;
@@ -26,11 +25,10 @@ form {
     backdrop-filter: brightness(65%);
     flex-direction: column;
     display: flex;
-    gap: 5px;
+    gap: 10px;
 }
 
-h1 {
-    
+h1 {    
     text-align: center;
     font-family: 'Times New Roman', Times, serif;
     font-weight: normal;
@@ -43,9 +41,9 @@ label {
     color: rgba(255,255,255,0.8);
     text-transform: uppercase;
     text-shadow: 1.5px 1.5px 1.5px rgba(0,0,0,0.5);
-    font-size: 12px;
+    font-size: 13px;
     letter-spacing: 1.7px;
-    padding-left: 10px;
+    padding-left: 10px;    
 }
 
 input {
@@ -70,4 +68,32 @@ button {
     margin: 10px 0px;
     box-shadow: 0px 0px 5px rgba(0,0,0,0.3);
     color: white;
+    cursor: pointer;
+}
+
+label > a {
+    color: rgb(45, 126, 231);
+    text-decoration: none;
+}
+
+.radio {
+    background-color: rgba(255, 255, 255, 0.281); 
+    height: 40px; 
+    line-height: 40px;  
+    border-radius: 8px;
+    padding: 5px 5px;
+    border: solid 1px;
+    text-align: center;
+    font-size: 1em;
+    margin: 35px 0px 30px;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+    cursor: help;
+}
+
+.copyright {
+    color: rgba(255,255,255,0.8);
+    text-align: center;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+    font-size: 11px;
+    letter-spacing: 1.7px;    
 }

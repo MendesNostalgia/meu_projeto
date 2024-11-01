@@ -4,20 +4,17 @@ if(isset($_POST['submit']))
 {
     include_once('config.php');
 
-    $titulo = $_POST['titulo'];
-    $desc = $_POST['desc'];
-    $requisitos = $_POST['requisitos'];
-    $localizaçao = $_POST['localizaçao'];
-    $beneficios = $_POST['beneficios'];
-    $datas = $_POST['data_val'];
+    $nome = $_POST['nome'];
+    $email = $_POST['email'];
+    $senha = password_hash($_POST['senha'], PASSWORD_DEFAULT);
 
-    $stmt = $mysqli->prepare("INSERT INTO cadastro_vagas (titulo_vagas, descriçao_vaga, requisitos, localizaçao, beneficios, data_inscriçao) VALUES (?, ?, ?, ?, ?, ?)");
-    $stmt->bind_param("ssssss", $titulo, $desc, $requisitos, $localizaçao, $beneficios, $datas);
+    $stmt = $mysqli->prepare("INSERT INTO logado (nome, email, senha) VALUES (?, ?, ?)");
+    $stmt->bind_param("sss", $nome, $email, $senha);
 
     if ($stmt->execute()) {
         echo "Vaga cadastrada com sucesso!";
     } else {
-        echo "Erro ao cadastrar a vaga: " . $stmt->error;
+        echo "Erro ao cadastrar a vaga! " . $stmt->error;
     }
 
     $stmt->close();
@@ -31,33 +28,33 @@ if(isset($_POST['submit']))
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <link rel="shortcut icon" href="" type="image/x-icon">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
     <title>CADASTRO</title>
 </head>
 <body>
-    <div class="login">
-        <form action="telcad.php" method="POST">
+    <div class="box">
+        <form action="telcad.php" method="POST" autocomplete="on">
             <h1>CADASTRO DE VAGAS</h1>
-            
-            <label>Título da vaga:</label>
-            <input type="text">
-            
-            <label>Descrição detalhada da vaga:</label>
-            <input type="text">
-            
-            <label>Requisitos:</label>
-            <input type="text">
 
-            <label>Localização:</label>                
-            <input type="text">
+            <label for="inome">Nome Completo</label>
+            <input type="text" name="nome" id="inome" required placeholder="Insira seu nome aqui" autocomplete="username">
 
-            <label>Benefícios:</label>
-            <input type="text">
+            <label for="iemail">E-mail</label>
+            <input type="email" name="email" id="iemail" required placeholder="Insira seu e-mail aqui" autocomplete="email">
 
-            <label>Data de inscrição:</label>
-            <input type="date">
+            <label for="isenha">Senha</label>
+            <input type="password" name="senha" id="isenha" required minlength="8" 
+           placeholder="Insira sua senha aqui" autocomplete="current-password">
             
-            <button type="submit">Cadastrar</button>
+            <button type="submit" name="submit" id="submit" value="Cadastrar">Cadastrar</button>
+
+            <!-- <input type="submit" name="submit" id="submit" class="submit" value="Cadastrar">Cadastrar</input> -->
+             
+            <label for="radio" class="radio" style="text-transform: none;">
+            <input type="radio" name="radio" style="height: auto;" required> Eu concordo com os <a href="index.html" target="_blank">termos e condições</a>.</input></label>
+        
+            <p class="copyright">Copyright © 2024 - Todos os direitos reservados.</p>
+
         </form>
     </div>
 </body>

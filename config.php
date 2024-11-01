@@ -2,7 +2,7 @@
 $dbHost = 'localhost';
 $dbUsername = 'root';
 $dbPassword = '';
-$dbName = 'cadastro';
+$dbName = 'acesso';
 
 $mysqli = new mysqli($dbHost, $dbUsername, $dbPassword, $dbName);
 
