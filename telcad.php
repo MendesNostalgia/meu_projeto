@@ -51,7 +51,7 @@ if(isset($_POST['submit']))
             <!-- <input type="submit" name="submit" id="submit" class="submit" value="Cadastrar">Cadastrar</input> -->
              
             <label for="radio" class="radio" style="text-transform: none;">
-            <input type="radio" name="radio" style="height: auto;" required> Eu concordo com os <a href="index.html" target="_blank">termos e condições</a>.</input></label>
+            <input type="radio" name="radio" style="height: auto;" required> Eu concordo com os <a href="terms.html" target="_blank">termos e condições</a>.</input></label>
         
             <p class="copyright">Copyright © 2024 - Todos os direitos reservados.</p>
 
