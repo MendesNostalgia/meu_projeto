@@ -1,12 +1,13 @@
 body {
-    background: rgba(74, 0, 123, 0.665);    
+    background: rgba(74, 0, 123, 0.665);
+    background: url(img/backgroud.jpg);    
 }
 
 .box {
     border: 1px solid black;
     width: 450px;
     height: 700px;
-    background: url('img/lilas.jpg');
+    background: url('img/flor.png');
     color: white;
     border-radius: 20px;
     box-shadow: 0px 0px 20px rgba(0,0,0,0.75);
