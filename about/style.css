@@ -1,0 +1,17 @@
+body {
+    font-size: 40px;
+    text-align: center;
+    color: white;
+    background-color: #000000;
+    padding-top: 40px;
+    margin: 100px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+

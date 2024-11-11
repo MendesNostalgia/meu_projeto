@@ -9,25 +9,24 @@
 </head>
 <body>
     <div class="box">
-        <form action="index.html" method="POST" autocomplete="on">
+        <form action="/about/about.html" method="get" autocomplete="on">
             <h1>CADASTRO DE VAGAS</h1>
 
             <label for="inome">Nome Completo</label>
             <input type="text" name="nome" id="inome" required placeholder="Insira seu nome aqui" autocomplete="username">
 
             <label for="iemail">E-mail</label>
-            <input type="email" name="email" id="iemail" required placeholder="Insira seu e-mail aqui" autocomplete="email">
+            <input type="email" name="email" id="iemail" required placeholder="Insira seu e-mail aqui" autocomplete="email" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$">
 
             <label for="isenha">Senha</label>
-            <input type="password" name="senha" id="isenha" required minlength="8" 
-           placeholder="Insira sua senha aqui" autocomplete="current-password">
+            <input type="password" name="senha" id="isenha" required minlength="8" placeholder="Insira sua senha aqui" autocomplete="current-password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Deve conter pelo menos um número e uma letra maiúscula e minúscula e pelo menos 8 ou mais caracteres">
             
             <button type="submit" name="submit" id="submit" value="Cadastrar">Cadastrar</button>
 
             <!-- <input type="submit" name="submit" id="submit" class="submit" value="Cadastrar">Cadastrar</input> -->
              
             <label for="radio" class="radio" style="text-transform: none;">
-            <input type="radio" name="radio" style="height: auto;" required> Eu concordo com os <a href="terms.html" target="_blank">termos e condições</a>.</input></label>
+            <input type="radio" name="radio" style="height: auto;" required title="Leia os teremos antes de clicar aqui"> Eu concordo com os <a class="concordo" href="termos/terms.html" target="_blank">termos e condições</a>.</input></label>
         
             <p class="copyright">Copyright © 2024 - Todos os direitos reservados.</p>
 

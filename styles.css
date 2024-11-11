@@ -1,13 +1,13 @@
 body {
-    background: rgba(74, 0, 123, 0.665);
-    background: url(img/backgroud.jpg);    
+    background: rgba(30, 0, 255, 0.268);
+    background-position: center;   
 }
 
 .box {
     border: 1px solid black;
-    width: 450px;
+    width: 500px;
     height: 700px;
-    background: url('img/flor.png');
+    background: url('img/baby-astro.jpg');
     color: white;
     border-radius: 20px;
     box-shadow: 0px 0px 20px rgba(0,0,0,0.75);
@@ -97,4 +97,8 @@ label > a {
     text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
     font-size: 11px;
     letter-spacing: 1.7px;    
+}
+
+.concordo {
+    color: yellow;
 }

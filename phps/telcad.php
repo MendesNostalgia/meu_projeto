@@ -22,7 +22,7 @@ if(isset($_POST['submit']))
 }
 ?>
 
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
@@ -48,7 +48,7 @@ if(isset($_POST['submit']))
             
             <button type="submit" name="submit" id="submit" value="Cadastrar">Cadastrar</button>
 
-            <!-- <input type="submit" name="submit" id="submit" class="submit" value="Cadastrar">Cadastrar</input> -->
+            //<input type="submit" name="submit" id="submit" class="submit" value="Cadastrar">Cadastrar</input>//
              
             <label for="radio" class="radio" style="text-transform: none;">
             <input type="radio" name="radio" style="height: auto;" required> Eu concordo com os <a href="terms.html" target="_blank">termos e condições</a>.</input></label>
@@ -58,4 +58,4 @@ if(isset($_POST['submit']))
         </form>
     </div>
 </body>
-</html>
+</html> -->
